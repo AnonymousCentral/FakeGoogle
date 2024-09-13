@@ -1,0 +1,136 @@
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a; /* BACKGROUND COLOUR */
+    color: #ffffff; /* TEXT COLOUR */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* SEARCH-CENTER */ 
+.search-container {
+    text-align: center;
+}
+
+/* GOOGLE LOGO */ 
+.logo {
+    width: 272px; /* WIDTH */
+    height: 92px; /* HEIGHT */
+    margin-bottom: 20px; /* BOTTOM MARGIN */
+}
+
+/* Search Container */ 
+.search-input-container {
+    position: relative;
+    display: inline-block;
+    width: 600px; /* WIDTH */
+}
+
+/* SEARCH BAR LOOKS */ 
+.search-input {
+    width: calc(115% - 80px); /* WIDTH */
+    padding: 12px; /* PADDING */
+    font-size: 18px; /* FONT SIZE */
+    border: 2px solid #ffffff; /* BORDER COLOUR */
+    border-radius: 24px; /* CURVE */
+    background-color: #ffffff; /* BACKGROUND */
+    color: #333333; /* TEXT */
+    padding-left: 40px; /* MAG GLASS SPACE */
+    padding-right: 80px; /* OTHER ICONS SPACE */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1); 
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.search-input:focus {
+    border-color: #4d90fe; /* HIGHLIGHT COLOUR */
+}
+
+.search-icon, .mic-icon, .lens-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 24px; /* ICON HEIGHT */
+}
+
+.search-icon {
+    left: 10px; 
+}
+
+.mic-icon {
+    right: 40px; 
+}
+
+.lens-icon {
+    right: 0; 
+}
+
+.search-text {
+    font-size: 14px;
+    color: #5f6368; 
+    margin-top: 20px; 
+}
+
+.add-shortcut {
+    margin-top: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.add-shortcut-icon {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%;
+    background-color: #4d91fe7d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px; 
+    color: white;
+    margin-bottom: 10px; 
+}
+
+.add-shortcut-link {
+    color: #ffffff; 
+    text-decoration: none;
+    font-size: 12px; 
+}
+
+.add-shortcut-link:hover {
+    text-decoration: underline;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 0; 
+    z-index: 1001; 
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-link {
+    margin: 0 10px; 
+    color: #ffffff; /* Text */
+    text-decoration: none;
+    font-size: 14px; 
+    opacity: 0.7; 
+}
+
+.navbar .circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #4d90fe; 
+    margin-left: 10px; 
+    flex-shrink: 0; 
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!-- Navbar -->
+<div class="navbar">
+    <a href="https://mail.google.com" target="_blank" class="nav-link">Gmail</a>
+    <a href="https://www.google.com/search?sca_esv=a6bdfe1beccbca75&rlz=1C1GBSK_en-GBGB1110GB1110&sxsrf=ADLYWIIVE4XVaoy1juR-Hi_Fkm166lHD4w:1720578675813&q=images&udm=2&fbs=AEQNm0Aa4sjWe7Rqy32pFwRj0UkWd8nbOJfsBGGB5IQQO6L3J_86uWOeqwdnV0yaSF-x2jo6Ttnu6iRjjgGjARfLolnBoLZZFBaghikH-Cd5D8-jDs501extcuvUVyoffiQ5rDquYr5BB7fR0vUbcc6HOfIRKuWHSQvCOjvp32EkHZihOwx56bjsiTSDWMF6Ho8RrtRGaZWI&sa=X&ved=2ahUKEwjfpp6Gt5uHAxX1U0EAHVtxAe8QtKgLegQIChAB&biw=2307&bih=1134&dpr=1.11" target="_blank" class="nav-link">Images</a>
+    <div class="circle"></div>
+</div>
+
+<!-- SEARCH BAR -->
+<body>
+    <div class="search-container dark-theme"> 
+        <img src="google-white-logo.png" alt="Google Logo" class="logo"> <!-- Google LOGO-->
+        <form action="https://www.google.com/search" method="GET" class="search-form" onsubmit="return submitForm(event)"> <!-- SETS FORM FOR GOOGLE SEARCH -->
+            <div class="search-input-container">
+                <input type="text" name="q" id="search-input" class="search-input" placeholder="Search Google or type a URL" autofocus> <!-- TEXT PLACEMENT -->
+                <img src="google-lens-logo.webp" alt="Google Lens" class="lens-icon"> 
+                <img src="MicGoogle.png" alt="Microphone" class="mic-icon"> 
+                <img src="MagGlass.png" alt="Search" class="search-icon"> 
+            </div>
+        </form>
+
+        <!-- SHORT CUT ICON -->
+        <div class="add-shortcut">
+            <div class="add-shortcut-icon">+</div>
+            <a href="#" class="add-shortcut-link">Add a shortcut</a>
+        </div>
+    </div>
+</body>
+</html>
